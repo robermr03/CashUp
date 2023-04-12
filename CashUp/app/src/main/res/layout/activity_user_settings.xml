@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSettings"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiarContrasena"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"/>
+    <EditText
+        android:id="@+id/et_nuevaContrasena"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Nueva contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/camCon"
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="75dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cambiar contraseña"
+        android:background="@drawable/btn_redondeado_princol"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ajustesCuenta"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/cerSes"
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="75dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:background="@drawable/btn_redondeado_princol"/>ç
+    <Button
+        android:id="@+id/borCue"
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="75dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrar cuenta"
+        android:background="@drawable/btn_redondeado_princol"/>
+
+
+
+</LinearLayout>

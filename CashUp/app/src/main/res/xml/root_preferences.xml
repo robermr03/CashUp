@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/general_header">
+
+        <CheckBoxPreference app:title="Balance"
+            app:summary="Desactiva la pantalla balance"
+            app:defaultValue="true"
+            app:key="prefBalance"/>
+
+        <CheckBoxPreference app:title="Transferencias"
+            app:summary="Desactiva la pantalla transferencias"
+            app:defaultValue="true"
+            app:key="prefTrans"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Cuenta">
+        <Preference app:title="Ajustes de cuenta">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.example.cashupnd"
+                android:targetClass="com.example.cashupnd.UserSettings"/>
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/acercade_header">
+
+        <Preference app:title="Versión"
+            app:summary="@string/version"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

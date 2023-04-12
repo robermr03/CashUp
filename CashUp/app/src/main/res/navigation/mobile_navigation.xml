@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.cashupnd.ui.inicio.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_balance"
+        android:name="com.example.cashupnd.ui.balance.BalanceFragment"
+        android:label="@string/menu_balance"
+        tools:layout="@layout/fragment_balance" />
+    <fragment
+        android:id="@+id/nav_transferencias"
+        android:name="com.example.cashupnd.ui.transferencias.TransferenciasFragment"
+        android:label="@string/menu_transferencias"
+        tools:layout="@layout/fragment_transferencias" />
+</navigation>
